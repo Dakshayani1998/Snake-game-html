@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" );
+*{
+    padding:0;
+    margin:0;
+}
+
+.body{
+    background:url("../snake\ new.jpg");
+    min-height: 100vh;
+    background-size: 120vw 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#board{
+    background: linear-gradient(rgb(45, 142, 45),rgb(77, 77, 253));
+    width: 100vmin;
+    height: 70vmin;
+    border: 10px solid rgb(7, 5, 2) ;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+.head{
+    background: linear-gradient(red, rgb(244, 27, 139));
+    border: 2px solid white;
+    border-radius: 9px;
+
+    transform: scale(1.02);
+
+}
+
+.food{
+    background: linear-gradient(red, yellow );
+    border: .25vmin solid black;
+    border-radius: 8px;
+
+}
+.snake{
+    background-color: rgb(244, 27, 139);
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+
+#scoreBox{
+    position: absolute;
+    top: 9px;
+    right: 220px;
+    font-size: 35px;
+    font-weight: bold;
+     font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+   
+}
+
+#hiscoreBox{
+    position: absolute;
+    top: 45px;
+    right: 220px;
+    font-size: 35px;
+    font-weight: bold;
+     font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+}
+
+#game{
+    color: brown;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    font-size: 50px;
+    font-family: "Roboto Slab", serif;
+    font-weight: bold;
+}
